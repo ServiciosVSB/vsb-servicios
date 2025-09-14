@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Monoton, Roboto } from 'next/font/google';
+import { Righteous, Roboto } from 'next/font/google';
 import Header from '@ui/organisms/Header';
 import Footer from '@ui/organisms/Footer';
 import PageTransition from '@ui/organisms/PageTransition';
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Servicios de construcción y mantenimiento. Pedí tu presupuesto.',
 };
 
-const display = Monoton({
+const display = Righteous({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-display',
