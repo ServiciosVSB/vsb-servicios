@@ -38,7 +38,7 @@ export const services: Service[] = [
   },
   // ✅ NUEVOS
   {
-    name: 'Soldaduría y Herrería',
+    name: 'Soldadura y Herrería',
     slug: 'soldadura-herreria',
     icon: '⚒️',
     details: [

@@ -53,7 +53,7 @@ export default function HomeView() {
             desc: 'Tableros, luminarias, cableado seguro.',
           },
           {
-            title: 'Soldaduría y Herrería',
+            title: 'Soldadura y Herrería',
             desc: 'Rejas, portones y estructuras livianas.',
           },
           {
