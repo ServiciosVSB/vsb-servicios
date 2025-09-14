@@ -37,7 +37,7 @@ export default function HomeView() {
         </div>
       </motion.section>
 
-      <section className="grid gap-4 md:grid-cols-4">
+      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {[
           {
             title: 'Pintura',
@@ -52,6 +52,14 @@ export default function HomeView() {
             title: 'Electricidad',
             desc: 'Tableros, luminarias, cableado seguro.',
           },
+          {
+            title: 'Soldaduría y Herrería',
+            desc: 'Rejas, portones y estructuras livianas.',
+          },
+          {
+            title: 'Aire acondicionado',
+            desc: 'Instalación, mantenimiento y limpieza.',
+          },
         ].map((s) => (
           <div
             key={s.title}
@@ -61,9 +69,9 @@ export default function HomeView() {
             <p className="mt-1 text-sm text-slate-300">{s.desc}</p>
             <a
               className="inline-block mt-3 text-sm text-brand-300 hover:text-brand-200"
-              href="/contact"
+              href="/services"
             >
-              Quiero cotizar →
+              Ver más →
             </a>
           </div>
         ))}
