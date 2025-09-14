@@ -12,11 +12,14 @@ export default function ServicesView() {
           const href = waLink(`Hola, quiero cotizar ${s.name}`);
           return (
             <div
-              key={s.name}
+              key={s.slug}
               className="p-5 border rounded-xl border-slate-700/50 bg-slate-900/30"
             >
-              <h3 className="font-semibold">{s.name}</h3>
-              <ul className="mt-2 ml-5 text-sm list-disc text-slate-300">
+              <h3 className="font-semibold">
+                {s.icon ? <span className="mr-1">{s.icon}</span> : null}
+                {s.name}
+              </h3>
+              <ul className="mt-2 ml-5 space-y-1 text-sm list-disc text-slate-300">
                 {s.details.map((d) => (
                   <li key={d}>{d}</li>
                 ))}
