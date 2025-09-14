@@ -38,10 +38,11 @@ export function contactEmailHTML(params: {
   logoUrl?: string; // absoluta: https://.../logo.png
 }) {
   const { name, email, message, logoUrl } = params;
-  const logoImg = logoUrl
-    ? `<img src="${logoUrl}" alt="VSB Servicios" width="40" height="40" style="display:block;border:0;outline:none;">`
+  const fallback = (process.env.SITE_URL || '').replace(/\/$/, '');
+  const finalLogo = logoUrl || (fallback ? `${fallback}/logo.png` : '');
+  const logoImg = finalLogo
+    ? `<img src="${finalLogo}" alt="VSB Servicios" width="40" height="40" style="display:block;border:0;outline:none;">`
     : '';
-
   return `
   <!doctype html>
   <html>
