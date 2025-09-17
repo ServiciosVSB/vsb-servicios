@@ -74,6 +74,7 @@ export default function Header() {
         <NavLink href="/">Inicio</NavLink>
         <NavLink href="/services">Servicios</NavLink>
         <NavLink href="/contact">Contacto</NavLink>
+        <NavLink href="/about">Acerca</NavLink>
 
         <Button
           type="button"
@@ -178,6 +179,13 @@ export default function Header() {
                     onClick={() => setOpen(false)}
                   >
                     Contacto
+                  </a>
+                  <a
+                    className="py-2 hover:text-brand-300"
+                    href="/about"
+                    onClick={() => setOpen(false)}
+                  >
+                    Acerca
                   </a>
                   <Button
                     type="button"

@@ -9,38 +9,38 @@ export const services: Service[] = [
   {
     name: 'Pintura',
     slug: 'pintura',
-    icon: '🎨',
+    icon: '/icons/pintura.png',
     details: ['Interior/Exterior', 'Impermeabilización', 'Masillado y lijado'],
   },
   {
     name: 'Albañilería',
     slug: 'albanileria',
-    icon: '🧱',
+    icon: '/icons/construccion.png',
     details: ['Revoques', 'Revestimientos', 'Reformas y ampliaciones'],
   },
   {
     name: 'Plomería',
     slug: 'plomeria',
-    icon: '🚿',
+    icon: '/icons/plomeria.png',
     details: ['Reparaciones', 'Instalaciones nuevas', 'Detección de fugas'],
   },
   {
     name: 'Electricidad',
     slug: 'electricidad',
-    icon: '💡',
+    icon: '/icons/electricidad.png',
     details: ['Tableros', 'Luminarias', 'Cableado seguro'],
   },
   {
     name: 'Mantenimiento',
     slug: 'mantenimiento',
-    icon: '🛠️',
+    icon: '/icons/herramientas.png',
     details: ['Sellados', 'Siliconados', 'Pequeñas reparaciones'],
   },
   // ✅ NUEVOS
   {
     name: 'Soldadura y Herrería',
     slug: 'soldadura-herreria',
-    icon: '⚒️',
+    icon: '/icons/herreria.png',
     details: [
       'Rejas y portones',
       'Estructuras livianas',
@@ -51,7 +51,7 @@ export const services: Service[] = [
   {
     name: 'Aire acondicionado',
     slug: 'aire-acondicionado',
-    icon: '❄️',
+    icon: '/icons/aireacond.png',
     details: [
       'Instalación de equipos split',
       'Mantenimiento preventivo',
